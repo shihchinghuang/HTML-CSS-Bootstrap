@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet">
+
+    <link href="./bootstrap-4.6.0-dist/css/bootstrap-grid.min.css" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Noto Sans TC', sans-serif;
+            box-sizing: border-box;
+        }
+
+        /* logo 大小 */
+        .navbar-brand {
+            width: 200px;
+        }
+
+        .navbar-brand img {
+            width: 100%;
+        }
+
+        /* 左側選單 所有產品*/
+        .category-active {
+            background-color: #8fbc8f57;
+            color: #008866;
+        }
+
+        /* 左側選單 */
+        .category div {
+            width: 180px;
+            font-size: 20px;
+            border: .5px solid rgba(138, 132, 132, 0.2);
+        }
+
+        /* 左側選單未被選到的 */
+        .inactive {
+            color: #008866;
+        }
+
+        /* 左側選單 產品類別*/
+        .title {
+            background-color: #008866;
+            color: white;
+        }
+
+        /* 商品區 */
+        .product {
+            width: 30%;
+            padding: 0 !important;
+            border: .5px solid rgba(138, 132, 132, 0.2);
+            position: relative;
+        }
+
+        .product .add-cart {
+            background-color: #8fbc8f57;
+            height: 55px;
+            padding-top: 4%;
+            margin-bottom: 0 !important;
+            color: #008866;
+        }
+
+        /* 本日精選tag */
+        .selected {
+            position: absolute;
+            width: 30px;
+            background-color: #008866;
+            color: white;
+            margin-left: 20px;
+            padding: 5px;
+        }
+
+        .far {
+            position: absolute;
+            right: 0;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- nav 開始 -->
+    <nav class="sticky-top navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"> <img class="mx-5 " src="./logo.png" alt=""> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mx-5" id="navbarText">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">首頁<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">產品</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">登入
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- nav 結束 -->
+
+    <!-- banner 開始 -->
+    <img class="w-100" src="./a.jpeg" alt="">
+    <!-- banner 結束 -->
+
+    <div class="container d-flex">
+        <!-- 左側選單 開始 -->
+        <div class="category mt-5 mr-5">
+            <div class="title px-3 py-2 text-center">
+                產品類別
+            </div>
+            <div class="category-active px-3 py-2 text-center">
+                所有產品（48）
+            </div>
+            <div class="inactive px-3 py-2 text-center">
+                本日精選（10）
+            </div>
+            <div class="inactive px-3 py-2 text-center">
+                人氣推薦（26）
+            </div>
+            <div class="inactive px-3 py-2 text-center">
+                新品上市（12）
+            </div>
+        </div>
+        <!-- 左側選單 結束 -->
+
+        <!-- 商品 開始 -->
+        <div class="d-flex flex-wrap w-100">
+            <div class="product w-50 text-center mt-5 mb-3 col-12 col-lg-6">
+                <p class="selected">本日精選</p>
+                <i class="far fa-heart"></i>
+                <img class="w-50 mb-3" src="b.jpeg" alt="">
+                <div class="d-flex justify-content-between mx-5">
+                    <div class=" text-center ">
+                        <p class="text-center ">TRADITION 手錶</p>
+                    </div>
+                    <div class="">
+                        <p class="text-center ">NT$ 9,975</p>
+                    </div>
+                </div>
+                <p class="add-cart text-center">加入購物車</p>
+            </div>
+            <div class="product w-50 text-center mt-5 my-3 col-12 col-lg-6">
+                <p class="selected">本日精選</p>
+                <i class="far fa-heart"></i>
+                <img class="w-50 mb-3" src="b.jpeg" alt="">
+                <div class="d-flex justify-content-between mx-5">
+                    <div class=" text-center ">
+                        <p class="text-center ">TRADITION 手錶</p>
+                    </div>
+                    <div class="">
+                        <p class="text-center ">NT$ 9,975</p>
+                    </div>
+                </div>
+                <p class="add-cart text-center">加入購物車</p>
+            </div>
+            <div class="product w-50 text-center my-3 col-12 col-lg-6">
+                <p class="selected">本日精選</p>
+                <i class="far fa-heart"></i>
+                <img class="w-50 mb-3" src="b.jpeg" alt="">
+                <div class="d-flex justify-content-between mx-5">
+                    <div class=" text-center ">
+                        <p class="text-center ">TRADITION 手錶</p>
+                    </div>
+                    <div class="">
+                        <p class="text-center ">NT$ 9,975</p>
+                    </div>
+                </div>
+                <p class="add-cart text-center">加入購物車</p>
+            </div>
+            <div class="product w-50 text-center my-3 col-12 col-lg-6">
+                <p class="selected">本日精選</p>
+                <i class="far fa-heart"></i>
+                <img class="w-50 mb-3" src="b.jpeg" alt="">
+                <div class="d-flex justify-content-between mx-5">
+                    <div class=" text-center ">
+                        <p class="text-center ">TRADITION 手錶</p>
+                    </div>
+                    <div class="">
+                        <p class="text-center ">NT$ 9,975</p>
+                    </div>
+                </div>
+                <p class="add-cart text-center">加入購物車</p>
+            </div>
+            <div class="product w-50 text-center my-3 col-12 col-lg-6">
+                <p class="selected">本日精選</p>
+                <i class="far fa-heart"></i>
+                <img class="w-50 mb-3" src="b.jpeg" alt="">
+                <div class="d-flex justify-content-between mx-5">
+                    <div class=" text-center ">
+                        <p class="text-center ">TRADITION 手錶</p>
+                    </div>
+                    <div class="">
+                        <p class="text-center ">NT$ 9,975</p>
+                    </div>
+                </div>
+                <p class="add-cart text-center">加入購物車</p>
+            </div>
+        </div>
+        <!-- 商品 結束 -->
+
+    </div>
+
+    <footer>
+        <div class="power container text-center p-5">Powered by <a href="https://dutyfree.tasameng.com.tw/">tasameng
+            </a> </div>
+    </footer>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
