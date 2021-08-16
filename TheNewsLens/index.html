@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>The News Lens</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        /* header-start */
+        .nav img {
+            width: 250px;
+        }
+
+
+        .search input {
+            border-radius: 30px;
+            border: 1px rgb(201, 201, 201) solid;
+            width: 130px;
+            height: 30px;
+            position: relative;
+        }
+
+
+        .nav,
+        .search {
+            justify-content: space-between;
+        }
+
+        .search .btn {
+            font-size: 12px;
+        }
+
+        .right span {
+            font-size: 15px;
+        }
+
+        .nav {
+            border-bottom: 1px solid rgb(201, 201, 201);
+            width: 98%;
+            margin: auto;
+        }
+
+        .category p {
+            font-size: 17px;
+
+        }
+
+        .category {
+            justify-content: space-between;
+        }
+
+        .article-category .left {
+            border-right: 1px solid rgb(201, 201, 201);
+            height: 25px;
+
+        }
+
+        /* header-end */
+        /* first-section-start */
+        .first-section {
+            padding-top: 130px;
+        }
+
+        .index {
+            /* background-color: rgb(248, 248, 246); */
+        }
+
+        .big {
+            width: 75%;
+            border: black 2px solid;
+            margin: -30px auto 30px;
+            text-align: center;
+            padding: 30px 60px;
+            position: relative;
+            background-color: white;
+        }
+
+        .news {
+            border: rgba(224, 224, 224, 0.5) 1px solid;
+            border-radius: 5px;
+            padding: 16px;
+        }
+
+        .news-1 {
+            height: fit-content;
+        }
+
+        .news-1 p {
+            font-size: 14px;
+        }
+
+        .box-img {
+            width: 150px;
+        }
+
+        .ad {
+            width: 370px;
+            background-color: transparent;
+        }
+
+        .ad .title {
+            border-bottom: rgba(224, 224, 224, 0.5) 1px solid;
+            padding-bottom: 6px;
+        }
+
+        .box {
+            border-bottom: rgba(224, 224, 224, 0.5) 1px solid;
+        }
+
+        .trending {
+            height: 500px;
+            background-color: rgba(0, 0, 0, 0.85);
+        }
+
+        .trending h5 {
+            width: 120px;
+            border-bottom: 1px white solid;
+            margin: auto;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        .trending-title {
+            width: 800px;
+            background-color: white;
+            margin: auto;
+            font-size: 20px;
+        }
+
+        .trending-title .number {
+            border-right: gray 2px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header shadow-sm">
+        <div class="nav pb-2 pt-3">
+            <div class="logo">
+                <img src="https://image3.thenewslens.com/assets/web/publisher-photo-1.png" alt="">
+            </div>
+            <div class="search">
+                <i class="fas fa-search"></i>
+                <input type="search">
+                <i class="fas fa-user-alt px-3"></i>
+                <button class="btn btn-primary">訂閱</button>
+                <i class="fas fa-bars px-3"></i>
+            </div>
+        </div>
+        <div class="category px-3 pt-3 d-flex">
+            <div class="article-category d-flex">
+                <div class="left d-flex mr-3">
+                    <p class="font-weight-bold pr-3">數位敘事</p>
+                    <p class="font-weight-bold px-3">香港</p>
+                    <p class="font-weight-bold px-3">東南亞</p>
+                    <p class="font-weight-bold px-3">covid-19</p>
+                    <p class="font-weight-bold px-3">沙龍</p>
+                </div>
+                <div class="center d-flex">
+                    <p class="px-2">covid-19最新疫情</p>
+                    ｜
+                    <p class="px-2">曉姿學理財</p>
+                    ｜
+                    <p class="px-2">曉姿想買房</p>
+                    ｜
+                    <p class="px-2">數位轉型普拉斯</p>
+                </div>
+            </div>
+            <div class="laguage d-flex">
+                <div class="right d-flex px-5">
+                    <span>簡體</span>
+                    ／
+                    <span>正體</span>
+                </div>
+                <div class="eng">
+                    <span>English Edition</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="index">
+        <div class="first-section container">
+            <div class="d-flex m-auto ">
+                <div class="col-8 p-3 shadow news mr-2">
+                    <div class="news-0">
+                        <img src="https://image1.thenewslens.com/2018/10/wl8gtxxy04icn7hpjeqwqmzkcbn451.jpg?auto=compress&h=648&q=80&w=1080"
+                            class="card-img-top" alt="...">
+                        <div class="card-body big">
+                            <p class="card-text">2021/06/01 國際 德國之聲</p>
+                            <h5 class="card-title">15年的梅克爾時代告終，德國民眾期待的「政壇新局」是什麼面貌？</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-4  ml-2 news-1">
+                    <div class="shadow news">
+                        <img src="https://image1.thenewslens.com/2021/4/l4wyi0jc5yb8s764vxdrx4rx7xlgvr.jpg?auto=compress&h=648&q=80&w=1080"
+                            class="card-img-top" alt="...">
+                        <p class="small mt-2">2021/06/01 國際 芭樂人類學</p>
+                        <p class="my-0">【印度的西藏地圖】印中邊界衝突升溫，以藏人為主的「印度邊境特種部隊」才曝了光</p>
+                    </div>
+                    <div class="shadow news mt-4">
+                        <img src="https://image1.thenewslens.com/2021/5/o3nh3tn5rb50dzsyi184cptq2e9pgz.jpg?auto=compress&h=648&q=80&w=1080"
+                            class="card-img-top" alt="...">
+                        <div class="brand d-flex justify-content-between">
+                            <p class="small mt-2">2021/05/31, 環境</p>
+                            <p class="small mt-2">BRAND STUDIO</p>
+                        </div>
+                        <p class="my-0">何壽川的紙業革命，讓「它」攻下95%的全球市占率</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="second-section d-flex pb-5 container">
+            <div class="shadow news col-4 mr-3 my-3">
+                <img src="https://image1.thenewslens.com/2021/6/ofmxh4s4k4fk8j4pkksutzvrjczcb5.jpeg?auto=compress&h=648&q=80&w=1080"
+                    class="card-img-top" alt="...">
+                <p class="small mt-2">2021/06/01, 國際</p>
+                <p class="my-0">飛機搭到飽、抽樓房送大麻菸，各國祭出哪些誘因提升疫苗接種率？</p>
+            </div>
+            <div class="shadow news col-4 mr-3 my-3">
+                <img src="https://image1.thenewslens.com/2021/5/ivxf3ovwmvocws93ougvurz814yt3i.jpg?auto=compress&h=648&q=80&w=1080"
+                    class="card-img-top" alt="...">
+                <p class="small mt-2">2021/06/01, 藝文</p>
+                <p class="my-0">【劇評】《火神的眼淚》：社會的歲月靜好是有人負重前行，英雄其實更像殉道者</p>
+            </div>
+            <div class="border ad my-3 p-3">
+                <p class="title">品牌聯名頻道 －「 創新法規沙盒 」</p>
+                <div class="box d-flex my-4">
+                    <div class="box-img">
+                        <img src="https://image2.thenewslens.com/2020/12/yta871wpbk6303qx0r6z7dzjo89ke0.jpg?auto=compress&fit=crop&h=648&q=85&updated_at=2020-12-09-17-56-55&w=1080"
+                            class="card-img-top" alt="...">
+                    </div>
+                    <div class="wrap ml-3">
+                        <p class="small mb-2">國際法規鬆綁經驗對我國實證場域未來規劃之啟示</p>
+                        <p class="small mb-1">SPONSORED</p>
+                    </div>
+
+                </div>
+                <div class="box d-flex mb-4">
+                    <div class="box-img">
+                        <img src="https://image5.thenewslens.com/2020/12/czivlla5mglmwspgri7cuvtt0eet0c.png?auto=compress&fit=crop&h=648&q=85&updated_at=2020-12-09-17-32-24&w=1080"
+                            class="card-img-top" alt="...">
+                    </div>
+                    <div class="wrap ml-3">
+                        <p class="small mb-2">借鑒馬來西亞的國家技術創新沙盒，促進創新拉力</p>
+                        <p class="small mb-1">SPONSORED</p>
+                    </div>
+
+                </div>
+                <div class="box d-flex mb-4">
+                    <div class="box-img">
+                        <img src="https://image5.thenewslens.com/2020/6/h6z4f82738r4k756mrmn1c4zk6oj9n.jpg?auto=compress&fit=crop&h=648&q=85&updated_at=2020-06-22-21-41-34&w=1080"
+                            class="card-img-top" alt="...">
+                    </div>
+                    <div class="wrap ml-3">
+                        <p class="small mb-2">法規鬆綁之後？我國遠距心理諮商之推動與展望</p>
+                        <p class="small mb-1">SPONSORED</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="trending pt-5">
+            <div class="container">
+                <h5 class="text-light">熱門文章</h5>
+                <div class="trending-title d-flex mt-5 p-3">
+                    <p class="number p-3">1 •</p>
+                    <p>【圖表】「紓困4.0」來了：家庭、個人、產業補貼如何申請？中央、六都總整理</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
