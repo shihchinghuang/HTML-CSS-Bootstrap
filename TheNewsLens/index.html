@@ -11,11 +11,119 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+
     <style>
-        /* header-start */
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            padding: 0;
+            margin: 0;
+            font-family: Microsoft JhengHei, sans-serif;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        .select {
+            border-bottom: 1px solid rgb(201, 201, 201);
+        }
+
+        .select a {
+            font-size: 12px;
+        }
+
         .nav img {
             width: 250px;
         }
@@ -70,10 +178,6 @@
             padding-top: 130px;
         }
 
-        .index {
-            /* background-color: rgb(248, 248, 246); */
-        }
-
         .big {
             width: 75%;
             border: black 2px solid;
@@ -116,63 +220,152 @@
             border-bottom: rgba(224, 224, 224, 0.5) 1px solid;
         }
 
+        /* 熱門文章開始 */
         .trending {
-            height: 500px;
+            height: fit-content;
             background-color: rgba(0, 0, 0, 0.85);
         }
 
         .trending h5 {
-            width: 120px;
+            width: 13%;
             border-bottom: 1px white solid;
             margin: auto;
             text-align: center;
             padding-bottom: 10px;
         }
 
-        .trending-title {
-            width: 800px;
+        li {
+            width: 75%;
             background-color: white;
-            margin: auto;
-            font-size: 20px;
+            list-style: none;
+            margin: 30px auto;
         }
 
-        .trending-title .number {
-            border-right: gray 2px solid;
+        li a {
+            color: #153b5f;
+
         }
+
+        li a:hover {
+            color: #009fdb;
+            text-decoration: none;
+        }
+
+        .trending-number {
+            font-size: 21px;
+            border-right: 2px solid #777;
+        }
+
+        .trending-article {
+            font-size: 21px;
+            width: 90%;
+        }
+
+        .trending-title-border {
+            width: 75%;
+            margin: -35px auto;
+            border-bottom: 2px solid white;
+        }
+
+        .second-border {
+            margin-top: -15px;
+        }
+
+        .last-border {
+            margin-bottom: 40px;
+        }
+
+        /* 熱門文章結束 */
+
+        /* 關鍵懶人包開始 */
+        .guide-pack {
+            margin: 0 100px;
+        }
+
+        .guide-pack p {
+            color: #555555;
+        }
+
+        .guide-pack-card-each {
+            border: #009fdb .5px solid;
+        }
+
+        .guide-pack-card-each {
+            width: 25%;
+        }
+
+        .guide-pack-card .m-3 img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .guide-pack-time {
+            color: #777777;
+            font-size: 14px;
+        }
+
+        .guide-pack-title a {
+            font-size: 17px;
+            color: #153b5f;
+        }
+
+        .btn {
+            font-size: 14px;
+            border: 1px #ccc solid;
+            color: #777;
+        }
+
+        .btn:hover {
+            color: white;
+            background-color: #777;
+            border: 1px #777 solid;
+        }
+
+        /* 關鍵懶人包結束 */
     </style>
 </head>
 
 <body>
     <div class="header shadow-sm">
-        <div class="nav pb-2 pt-3">
+        <div class="select text-center py-3">
+            <a href="" class="mx-3">關於我們</a>
+            <a href="" class="mx-3">旗下媒體</a>
+            <a href="" class="mx-3">多元服務</a>
+            <a href="" class="mx-3"><img
+                    src="https://www.thenewslens.com/assets/images/tnl/logo-tnl-group-dark-international.svg"
+                    alt=""></a>
+            <a href="" class="mx-3">與我們合作</a>
+            <a href="" class="mx-3">加入我們</a>
+            <a href="" class="mx-3">新聞中心</a>
+        </div>
+        <div class="nav py-3">
             <div class="logo">
                 <img src="https://image3.thenewslens.com/assets/web/publisher-photo-1.png" alt="">
             </div>
             <div class="search">
                 <i class="fas fa-search"></i>
                 <input type="search">
-                <i class="fas fa-user-alt px-3"></i>
-                <button class="btn btn-primary">訂閱</button>
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
                 <i class="fas fa-bars px-3"></i>
             </div>
         </div>
-        <div class="category px-3 pt-3 d-flex">
+        <div class="category px-3 py-3 d-flex">
             <div class="article-category d-flex">
                 <div class="left d-flex mr-3">
                     <p class="font-weight-bold pr-3">數位敘事</p>
                     <p class="font-weight-bold px-3">香港</p>
                     <p class="font-weight-bold px-3">東南亞</p>
                     <p class="font-weight-bold px-3">covid-19</p>
-                    <p class="font-weight-bold px-3">沙龍</p>
+                    <p class="font-weight-bold px-3">網路沙龍</p>
                 </div>
                 <div class="center d-flex">
-                    <p class="px-2">covid-19最新疫情</p>
+                    <p class="px-2">covid-19 疫苗資訊</p>
+                    ｜
+                    <p class="px-2">曉姿買保險</p>
                     ｜
                     <p class="px-2">曉姿學理財</p>
                     ｜
-                    <p class="px-2">曉姿想買房</p>
-                    ｜
-                    <p class="px-2">數位轉型普拉斯</p>
+                    <p class="px-2">暖世代永續行動</p>
                 </div>
             </div>
             <div class="laguage d-flex">
@@ -270,15 +463,87 @@
                 </div>
             </div>
         </div>
-        <div class="trending pt-5">
+
+        <!-- 熱門文章開始 -->
+        <div class="trending py-5">
             <div class="container">
-                <h5 class="text-light">熱門文章</h5>
-                <div class="trending-title d-flex mt-5 p-3">
-                    <p class="number p-3">1 •</p>
-                    <p>【圖表】「紓困4.0」來了：家庭、個人、產業補貼如何申請？中央、六都總整理</p>
-                </div>
+                <h5 class="text-white">熱門文章</h5>
+                <ul>
+                    <div class="trending-title-border mt-5"></div>
+                    <li class="d-flex mt-5 p-3 trending-li">
+                        <div class="trending-number px-3 align-middle">1 •</div>
+                        <a href="" class="trending-article pl-4  align-middle">李智凱20年拚得奧運獎牌夢，但從小一起「翻滾」的黃克強命運卻大不同</a>
+                    </li>
+                    <div class="trending-title-border second-border"></div>
+                    <li class="d-flex mt-5 p-3">
+                        <div class="trending-number px-3 align-middle">2 •</div>
+                        <a href="" class="trending-article pl-4 align-middle">徐志摩真是「渣男」代名詞嗎？讀完張幼儀、陸小曼的故事後我遲疑了</a>
+                    </li>
+                    <div class="trending-title-border second-border"></div>
+                    <li class="d-flex mt-5 p-3">
+                        <div class="trending-number px-3 align-middle">3 •</div>
+                        <a href="" class="trending-article pl-4 align-middle">買一瓶水要700萬！委內瑞拉「印新鈔」救惡性通膨，一億元換100元</a>
+                    </li>
+                    <div class="trending-title-border second-border"></div>
+                    <li class="d-flex mt-5 p-3">
+                        <div class="trending-number px-3 align-middle">4 •</div>
+                        <a href="" class="trending-article pl-4 align-middle">AI的第一部劇本創作邏輯混亂、內容粗鄙，但所說的「笑話」讓人細思極恐</a>
+                    </li>
+                    <div class="trending-title-border second-border"></div>
+                    <li class="d-flex mt-5 p-3">
+                        <div class="trending-number px-3 align-middle">5 •</div>
+                        <a href="" class="trending-article pl-4 align-middle">色彩心理學（上）：顏色有「性格」？你的日常衣服怎樣配色？</a>
+                    </li>
+                    <div class="trending-title-border second-border last-border"></div>
+                </ul>
             </div>
         </div>
+        <!-- 熱門文章結束 -->
+
+        <!-- 關鍵懶人包開始 -->
+        <div class="guide-pack my-5">
+            <p class="h5 text-center my-5">關鍵懶人包</p>
+            <div class="guide-pack-card d-flex justify-content-between my-5">
+                <div class="m-3 guide-pack-card-each">
+                    <img src="https://image1.thenewslens.com/2021/6/227xj5l32z7xqi7fjay2gp6w1v6pgz.jpeg" alt="">
+                    <div class="guide-pack-time mx-3 mt-2">
+                        <p>2021/06/24</p>
+                    </div>
+                    <div class="guide-pack-title mx-3 mt-3 mb-5">
+                        <a href="">【懶人包】與港人共歷風雨，回顧《蘋果》26年</a></div>
+                </div>
+                <div class="m-3 guide-pack-card-each">
+                    <img src="https://image2.thenewslens.com/2021/3/cd4jzmmf7yguwgdv2o11hwsiazss0m.jpeg" alt="">
+                    <div class="guide-pack-time mx-3 mt-2">
+                        <p>2021/06/24</p>
+                    </div>
+                    <div class="guide-pack-title mx-3 mt-3 mb-5">
+                        <a href=""> 【懶人包】國安警可審查參選人，中國「完善」香港選制屬「大倒退」？ </a></div>
+                </div>
+                <div class="m-3 guide-pack-card-each">
+                    <img src="https://image4.thenewslens.com/2021/3/47mj33c3918vdzfcxedgenqtn3rrii.jpg" alt="">
+                    <div class="guide-pack-time mx-3 mt-2">
+                        <p>2021/06/24</p>
+                    </div>
+                    <div class="guide-pack-title mx-3 mt-3 mb-5">
+                        <a href=""> 【懶人包】影響音樂產業的巨人逝世，回顧錄音帶發明人Lou Ottens的重要事蹟 </a></div>
+                </div>
+                <div class="m-3 guide-pack-card-each">
+                    <img src="https://image6.thenewslens.com/2021/2/tyx3ya9sy1jgqjaq0qwks66syeoza9.JPG" alt="">
+                    <div class="guide-pack-time mx-3 mt-2">
+                        <p>2021/06/24</p>
+                    </div>
+                    <div class="guide-pack-title mx-3 mt-3 mb-5">
+                        <a href=""> 【懶人包】薪俸稅寬免減、5000元消費券——2021《財政預算案》最貼身10點 </a></div>
+                </div>
+            </div>
+            <div class="full-list-button text-center">
+                <a href="" class="btn ">看完整列表</a>
+            </div>
+        </div>
+        <!-- 關鍵懶人包結束 -->
+
+
     </div>
 
 
