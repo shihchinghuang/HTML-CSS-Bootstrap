@@ -8,10 +8,27 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200&display=swap" rel="stylesheet">
+    <link href="./bootstrap-4.6.0-dist/css/bootstrap-grid.min.css" rel="stylesheet">
     <style>
+        * {
+            font-family: 'open sans', 'Microsoft JhengHei', sans-serif;
+        }
+
+        nav {
+            position: relative;
+        }
+
         .row {
             display: flex;
-            position: relative;
+            /* position: relative; */
             background-color: rgb(238, 228, 217);
         }
 
@@ -23,7 +40,7 @@
         .navbar-mobile {
             width: 100%;
             position: absolute;
-            /* top: 15px; */
+            top: -3px;
             text-align: center;
             font-size: 10px;
         }
@@ -43,11 +60,7 @@
         .navleft a {
             font-size: 20px;
             color: antiquewhite;
-        }
-
-        .navmiddle {
-            position: absolute;
-            right: 300px;
+            font-family: 'Noto Serif TC', serif;
 
         }
 
@@ -57,39 +70,66 @@
         }
 
         .navmiddle a {
-            font-size: 16px;
+            font-size: 14px;
             text-decoration: none;
             color: rgba(250, 235, 215, 0.3);
         }
 
         .brand {
-            display: inline;
             position: fixed;
             top: 15px;
             right: 40px;
-            background-color: gray;
         }
 
-        .m-0 {
-            display: inline;
-            position: fixed;
-            top: 45px;
-            right: 40px;
-            background-color: gray;
+        .brand a,
+        .brand p,
+        .brand span {
+            color: rgb(255, 255, 255);
+            background-color: #656565;
+            font-size: 12px;
+            padding: 0 10px;
+            margin: 10px 0;
+            text-decoration: none;
         }
 
-        .navright p {
-            color: darkgrey;
-            margin-bottom: 0;
+        .shopping-bag,
+        .wish-list {
+            display: block;
+            background-color: transparent !important;
+            color: #656565 !important;
+            padding-right: 0 !important;
+        }
+
+        .shopping-bag i {
+            padding-right: 5px;
+            color: #656565;
+        }
+
+        .shopping-number p {
+            background-color: transparent !important;
+            font-size: 120px;
+            margin-top: -45px;
+            color: #656565;
         }
 
         .pl-5 {
             font-weight: 1;
         }
 
-        .am {
-            font-size: 16px;
-            color: darkgoldenrod;
+        .sc1-right {
+            width: fit-content;
+        }
+
+        .word-1 {
+            margin-top: 50px;
+            font-family: 'Noto Serif TC', serif;
+            color: #656565;
+        }
+
+        .word-1 p {
+            color: #656565;
+            font-size: 10px;
+            font-family: 'Noto Serif TC', serif;
         }
 
         .imgb {
@@ -97,7 +137,7 @@
         }
 
         .imgs {
-            width: 30%;
+            width: 65%;
         }
 
         .sc3 {
@@ -107,9 +147,22 @@
             margin: 100px auto;
         }
 
-        .sc3 img {
+        .sc3 div {
             width: 30%;
             padding: 0.5%;
+            color: #656565;
+            font-family: 'Noto Serif TC', serif;
+        }
+
+        .img-3 p {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 8px;
+        }
+
+        .img-word p,
+        .img-word span {
+            color: #656565;
+            font-family: 'Noto Serif TC', serif;
         }
 
         .footer {
@@ -117,10 +170,19 @@
             width: 100%;
         }
 
+        .copyright p {
+            font-size: 8px;
+        }
+
         .nav {
             position: absolute;
             top: 20px;
             right: calc(50% - 125px);
+        }
+
+        .nav-item a {
+            font-size: 8px;
+            color: black;
         }
 
         .footer-mobile {
@@ -154,14 +216,15 @@
         <a href="https://www.meierq.com/campaign/2Q55R032602">
             <img class="w-100" src="./image/001.jpg" alt="">
         </a>
-        <nav class="navbar d-none d-lg-block">
-            <div class="navleft">
+        <nav class="navbar d-flex mt-4">
+            <div class="navleft pl-5">
                 <a class="navbar-brand" href="https://www.meierq.com/">
-                    <h1 class="pl-5"> MEIER.Q </h1>
+                    <img src="https://s.azurecdns.com/sff/meierq/static/img/logo-meierq-s.png" alt="">
                 </a>
             </div>
-            <div class="navmiddle">
+            <div class="navmiddle mr-3">
                 <div class="search d-xl-inline d-none">
+                    <i class="fa fa-search" aria-hidden="true"></i>
                     <img style="width: 20px;" src="/meierq/image/search.png" alt="">
                     <input type="text" placeholder="SEARCH" class="pl-3 mr-5">
                 </div>
@@ -170,16 +233,26 @@
                     <a href="">MMM</a>
                     <a href="">DESIGNERS</a>
                     <a href="">HOME BY MEIER.Q</a>
-                    <a href="">WEDDING</a>
+                    <a href="" class="mr-5 pr-5">WEDDING</a>
                 </small>
-                <div class="navright ">
-                    <div class="brand">
-                        <a class="text-white" href="#">PAZZO</a>
+            </div>
+            <div class="navright ml-5">
+                <div class="brand text-right ml-5">
+                    <a href="#">PAZZO</a>
+                    <div class="d-flex log-account justify-content-end">
+                        <a href="" class="login ">LOGIN </a>
+                        <span> / </span>
+                        <a href="" class="my-account"> MY
+                            ACCOUNT</a></div>
+                    <a href="" class="wish-list text-right  ">MY WISH LIST</a>
+                    <a href="" class="shopping-bag"> <i class="fas fa-shopping-bag"></i> MY SHOPPING
+                        BAG</a>
+                    <div class="shopping-number">
+                        <p>0</p>
                     </div>
-                    <p class="m-0 text-white"><a class="text-white" href="">LOGIN</a> <span> / </span><a
-                            class="text-white" href="">MY
-                            ACCOUNT</a></p>
+
                 </div>
+
             </div>
         </nav>
         <nav class="navbar-mobile d-lg-none d-block w-100 bg-white pb-5">
@@ -207,27 +280,53 @@
             <img src="./image/002.jpg" alt="">
         </div>
         <div class="sc1 d-flex mx-auto my-5 w-75 justify-content-between">
-            <div class="imgb">
+            <div class="imgb w-100">
                 <img src="./image/003.jpg" alt="">
             </div>
-            <div class="imgs">
-                <img src="./image/004.jpg" alt="">
+            <div class="sc1-right">
+                <div class="imgs ml-auto">
+                    <img src="./image/004.jpg" alt="">
+                </div>
+                <div class="word-1 text-right w-50 ml-auto">
+                    <h3>ANOTHER.M</h3>
+                    <p class="mt-3 mb-5">SPRINGVIBES</p>
+                    <p>WE WITH THE WAY OF YOUR OUTFIT,
+                        <br>BUT ALSO ENRICH YOUR TASTE<br>BY DETAILS IN DAILY LIFE.<br>MAINTAIN
+                        THE SIMPLICITY OF MEIER.Q.</p>
+                </div>
             </div>
         </div>
         <div class="sc2">
             <img src="./image/005.jpg" alt="">
         </div>
         <div class="sc3">
-            <img class="mx-3" src="./image/006.jpg" alt="">
-            <img class="mx-3" src="./image/007.jpg" alt="">
-            <img class="mx-3" src="./image/008.jpg" alt="">
+            <div class="img-word mx-3">
+                <img class="mb-5 pb-5" src="./image/006.jpg" alt="">
+                <h3 class="word-2 d-inline">$290</h3>
+                <span> / 件</span>
+                <p class="mt-3">春 季 新 價 格 專 區</p>
+            </div>
+            <div class="img-2 mx-3"><img src="./image/007.jpg" alt=""></div>
+            <div class="img-3 mx-3 text-right">
+                <img class="mb-5 pb-5" src="./image/008.jpg" alt="">
+                <p>WE WITH THE WAY OF YOUR OUTFIT,
+                    <br>BUT ALSO ENRICH YOUR TASTE<br>BY DETAILS IN DAILY LIFE.<br>MAINTAIN
+                    THE SIMPLICITY OF MEIER.Q.</p>
+            </div>
         </div>
     </div>
 
-    <footer class="position-relative d-lg-block d-none">
+    <footer class="position-relative d-lg-block d-none mx-5 py-3">
         <div class="float-right">
             <div class="copyright">
-                <p>ⓒ meier.q</p>
+                <div class="d-flex justify-content-between">
+                    <p>ⓒ meier.q</p>
+                    <div class="social-media">
+                        <i class="fab fa-facebook-f px-2"></i>
+                        <i class="fab fa-instagram px-2"></i>
+                        <i class="fab fa-line px-2"></i>
+                    </div>
+                </div>
                 <p>copyright ⓒ meier.q co. ltd all rights reserved</p>
             </div>
         </div>
@@ -257,14 +356,14 @@
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
