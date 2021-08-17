@@ -26,6 +26,21 @@
             margin: 0;
             font-family: Microsoft JhengHei, sans-serif;
             box-sizing: border-box;
+            background-color: rgb(247, 247, 247);
+        }
+
+        .container-tnl {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .shadow-tnl {
+            box-shadow: 1px 1px 3px #eee;
+        }
+
+        .header {
+            background-color: white;
+
         }
 
         a {
@@ -95,10 +110,6 @@
 
         /* header-end */
         /* first-section-start */
-        .first-section {
-            padding-top: 130px;
-        }
-
         .big {
             width: 75%;
             border: black 2px solid;
@@ -110,6 +121,7 @@
         }
 
         .news {
+            background-color: white;
             border: rgba(224, 224, 224, 0.5) 1px solid;
             border-radius: 5px;
             padding: 16px;
@@ -140,6 +152,50 @@
         .box {
             border-bottom: rgba(224, 224, 224, 0.5) 1px solid;
         }
+
+        /* covid即時開始 */
+
+        .covid {
+            background-color: white;
+            border-radius: 2px;
+        }
+
+        .covid-left {
+            background-color: rgb(247, 247, 247);
+        }
+
+        .covid a {
+            color: #153B5F;
+            font-size: 14px !important;
+
+        }
+
+        .covid h4 {
+            font-weight: 300 !important;
+            font-size: 26px !important;
+        }
+
+        .covid p {
+            font-size: 14px;
+        }
+
+        .fz20 {
+            font-size: 20px !important;
+        }
+
+        .fas {
+            color: #046EB7;
+        }
+
+        .fa-circle {
+            color: #B64B57;
+        }
+
+        .border-progress {
+            border-right: 1px dashed black;
+        }
+
+        /* covid即時結束 */
 
         /* 熱門文章開始 */
         .trending {
@@ -201,6 +257,7 @@
         /* 關鍵懶人包開始 */
         .guide-pack {
             margin: 0 100px;
+            background-color: rgb(247, 247, 247);
         }
 
         .guide-pack p {
@@ -208,6 +265,7 @@
         }
 
         .guide-pack-card-each {
+            background-color: white;
             border: #009fdb .5px solid;
         }
 
@@ -243,11 +301,74 @@
         }
 
         /* 關鍵懶人包結束 */
+
+        /* 關鍵影音開始 */
+        .video-title {
+            margin: auto;
+            width: 140px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .video-main {
+            width: 62%;
+            background-color: white;
+            border: 2px #333 solid;
+            padding: 15px;
+        }
+
+        .video-main p {
+            font-size: 14px;
+            color: #85BBCE;
+        }
+
+        .video-main h5 {
+            color: #153B5F;
+        }
+
+        .video-right {
+            width: 35%;
+        }
+
+        .video-selected,
+        .video-new {
+            background-color: white;
+        }
+
+        .video-selected-title {
+            border-bottom: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        .title-category a {
+            font-size: 14px;
+            color: #153b5f;
+        }
+
+        .title-category p {
+            margin-top: 15px;
+            padding: 2px 5px;
+            width: fit-content;
+            font-size: 11px;
+            margin-bottom: 0 !important;
+            color: #777;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+        }
+
+
+        .video-selected img,
+        .video-new img {
+            object-fit: cover;
+            width: 130px;
+        }
+
+        /* 關鍵影音結束 */
     </style>
 </head>
 
 <body>
-    <div class="header shadow-sm">
+    <!-- 最上面三排nav開始 -->
+    <div class="header shadow-tnl">
         <div class="select text-center py-3">
             <a href="" class="mx-3">關於我們</a>
             <a href="" class="mx-3">旗下媒體</a>
@@ -300,12 +421,45 @@
                 </div>
             </div>
         </div>
+    </div>
+    <!-- 最上面三排nav結束 -->
+
+    <!-- covid資訊開始 -->
+    <div class="container-tnl my-3">
+        <div class="covid p-3  shadow-tnl">
+            <div class="covid-left d-flex align-items-center justify-content-between my-auto px-3 py-2">
+                <i class="fas fa-circle "></i>
+                <h4 class="my-auto">二級</h4>
+                <p class="pr-3 border-right border-dark my-auto">疫情警戒<br>至08/23</p>
+                <p class="my-auto text-center">8月<br>16</p>
+                <p class="my-auto">確診<br>新增</p>
+                <p class="my-auto fz20">8人</p>
+                <i class="fas fa-chart-area"></i>
+                <p class="my-auto">死亡<br>新增</p>
+                <p class="my-auto fz20">0人</p>
+                <i class="fas fa-chart-area"></i>
+                <a class="border-right border-dark my-auto pr-3" href="">更多<br>資訊</a>
+                <p class="my-auto">疫苗<br>到貨</p>
+                <h4 class="my-auto fz20">1097.6萬劑</h4>
+                <p class="my-auto">疫苗<br>施打</p>
+                <h4 class="my-auto fz20">982.5萬人次</h4>
+                <p class="my-auto"> <small>覆蓋率39.04% </small><small> 60% </small><small> 100%</small><br>
+                    <i class="fas fa-square"></i><i class="fas fa-square"></i><i class="fas fa-square"></i><i
+                        class="fas fa-square"></i><i class="fas fa-square"></i><i class="far fa-square"></i><i
+                        class="far fa-square"></i><i class="far fa-square border-progress py-1"></i><i
+                        class="far fa-square"></i><i class="far fa-square py-1 border-progress"></i></p>
+                <a class="my-auto" href="">更多<br>資訊</a>
+            </div>
+        </div>
 
     </div>
+    <!-- covid資訊結束 -->
+
     <div class="index">
-        <div class="first-section container">
+        <!-- 第一區一大兩小文章開始 -->
+        <div class="first-section container-tnl">
             <div class="d-flex m-auto ">
-                <div class="col-8 p-3 shadow news mr-2">
+                <div class="item col-8 p-3 shadow-tnl news mr-2">
                     <div class="news-0">
                         <img src="https://image1.thenewslens.com/2018/10/wl8gtxxy04icn7hpjeqwqmzkcbn451.jpg?auto=compress&h=648&q=80&w=1080"
                             class="card-img-top" alt="...">
@@ -316,13 +470,13 @@
                     </div>
                 </div>
                 <div class="item col-4  ml-2 news-1">
-                    <div class="shadow news">
+                    <div class="shadow-tnl news">
                         <img src="https://image1.thenewslens.com/2021/4/l4wyi0jc5yb8s764vxdrx4rx7xlgvr.jpg?auto=compress&h=648&q=80&w=1080"
                             class="card-img-top" alt="...">
                         <p class="small mt-2">2021/06/01 國際 芭樂人類學</p>
                         <p class="my-0">【印度的西藏地圖】印中邊界衝突升溫，以藏人為主的「印度邊境特種部隊」才曝了光</p>
                     </div>
-                    <div class="shadow news mt-4">
+                    <div class="shadow-tnl news mt-4">
                         <img src="https://image1.thenewslens.com/2021/5/o3nh3tn5rb50dzsyi184cptq2e9pgz.jpg?auto=compress&h=648&q=80&w=1080"
                             class="card-img-top" alt="...">
                         <div class="brand d-flex justify-content-between">
@@ -334,14 +488,17 @@
                 </div>
             </div>
         </div>
-        <div class="second-section d-flex pb-5 container">
-            <div class="shadow news col-4 mr-3 my-3">
+        <!-- 第一區一大兩小文章結束 -->
+
+        <!-- 第二區兩小一廣編文章開始 -->
+        <div class="second-section d-flex pb-5 container-tnl">
+            <div class="shadow-tnl news col-4 mr-3 my-3">
                 <img src="https://image1.thenewslens.com/2021/6/ofmxh4s4k4fk8j4pkksutzvrjczcb5.jpeg?auto=compress&h=648&q=80&w=1080"
                     class="card-img-top" alt="...">
                 <p class="small mt-2">2021/06/01, 國際</p>
                 <p class="my-0">飛機搭到飽、抽樓房送大麻菸，各國祭出哪些誘因提升疫苗接種率？</p>
             </div>
-            <div class="shadow news col-4 mr-3 my-3">
+            <div class="shadow-tnl news col-4 mr-3 my-3">
                 <img src="https://image1.thenewslens.com/2021/5/ivxf3ovwmvocws93ougvurz814yt3i.jpg?auto=compress&h=648&q=80&w=1080"
                     class="card-img-top" alt="...">
                 <p class="small mt-2">2021/06/01, 藝文</p>
@@ -384,10 +541,11 @@
                 </div>
             </div>
         </div>
+        <!-- 第二區兩小一廣編文章結束 -->
 
         <!-- 熱門文章開始 -->
-        <div class="trending py-5">
-            <div class="container">
+        <div class="trending py-5 my-5">
+            <div class="container-tnl">
                 <h5 class="text-white">熱門文章</h5>
                 <ul>
                     <div class="trending-title-border mt-5"></div>
@@ -423,7 +581,7 @@
 
         <!-- 關鍵懶人包開始 -->
         <div class="guide-pack my-5">
-            <p class="h5 text-center my-5">關鍵懶人包</p>
+            <p class="h5 text-center my-5 py-5">關鍵懶人包</p>
             <div class="guide-pack-card d-flex justify-content-between my-5">
                 <div class="m-3 guide-pack-card-each">
                     <img src="https://image1.thenewslens.com/2021/6/227xj5l32z7xqi7fjay2gp6w1v6pgz.jpeg" alt="">
@@ -464,6 +622,73 @@
         </div>
         <!-- 關鍵懶人包結束 -->
 
+        <!-- 關鍵影音開始 -->
+        <div class="video-secion container-tnl my-5">
+            <p class="video-title h5 text-center my-5 pt-5 pb-2">關鍵影音</p>
+            <div class="d-flex justify-content-between">
+                <div class="video-main">
+                    <iframe width="100%" height="435" src="https://www.youtube.com/embed/pmLU6p1M8jg"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p class="text-center mt-3">SPONSORED</p>
+                    <h5 class="text-center mb-5">【那些疫情改變的事】氣候變遷的現在進行式：疫後調查</h5>
+                </div>
+
+                <div class="video-right">
+                    <div class="video-selected shadow-tnl">
+                        <p class="mx-3 pt-2 pb-2 video-selected-title">精選影音</p>
+                        <div class="d-flex px-3 pb-2">
+                            <img class="h-25"
+                                src="https://image5.thenewslens.com/2016/7/i5ybi1bwj1036csmoull28aokff9bm.png" alt="">
+                            <div class="title-category pl-3">
+                                <a href="">【影片】破除謠言：打噴嚏閉眼睛是怕眼球被噴出來？</a>
+                                <p>冷知識</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-new shadow-tnl mt-4">
+                        <div class="d-flex justify-content-between mx-3 video-selected-title pt-2 mb-3">
+                            <p>最新影音</p>
+                            <a href=""><small>看所有關鍵影音</small></a>
+                        </div>
+                        <div class="d-flex px-3 pb-2">
+                            <img class="h-25"
+                                src="https://image4.thenewslens.com/2021/8/cfvnjiezyx6vbbehafbj61s597tri7.jpg" alt="">
+                            <div class="title-category pl-3">
+                                <a href="">【國際大風吹】攻佔大片阿富汗，塔利班想要什麼？</a>
+                                <p>國際大風吹</p>
+                            </div>
+                        </div>
+                        <div class="d-flex px-3 pb-2">
+                            <img class="h-25"
+                                src="https://image4.thenewslens.com/2021/7/ytljfo401nu1zez1x06smgr7qdgryb.png" alt="">
+                            <div class="title-category pl-3">
+                                <a href="">【醫鍵解壓縮】S1EP03｜全球只有100多例，外國口音綜合症究竟是什麼？</a>
+                                <p>TNL 節目組</p>
+                            </div>
+                        </div>
+                        <div class="d-flex px-3 pb-2">
+                            <img class="h-25"
+                                src="https://image4.thenewslens.com/2021/8/x1lmlay5j4pjmt7upp8o08k1a3oqwx.png" alt="">
+                            <div class="title-category pl-3">
+                                <a href="">【國際大風吹】辦完奧運，主辦城市會得到什麼？</a>
+                                <p>國際大風吹</p>
+                            </div>
+                        </div>
+                        <div class="d-flex px-3 pb-2">
+                            <img class="h-25"
+                                src="https://image4.thenewslens.com/2021/7/844catu8ehh76z5oaenuw2fnljgc9n.png" alt="">
+                            <div class="title-category pl-3">
+                                <a href="">【醫鍵解壓縮】S1EP02｜花香聞起來卻像大便？為什麼會產生「嗅覺障礙」？</a>
+                                <p>TNL 節目組</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 關鍵影音結束 -->
 
     </div>
 
