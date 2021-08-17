@@ -1,0 +1,381 @@
+/* 全站用開始 */
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Microsoft JhengHei, sans-serif;
+    box-sizing: border-box;
+    background-color: rgb(247, 247, 247);
+}
+
+.container-tnl {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.shadow-tnl {
+    box-shadow: 1px 1px 3px #eee;
+}
+
+a {
+    text-decoration: none;
+    color: #153B5F;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #009fdb;
+    text-decoration: none;
+}
+/* 全站用結束 */
+
+/* 最上面三排nav開始 */
+.header {
+    background-color: white;
+
+}
+
+.select {
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.select a {
+    font-size: 12px;
+}
+
+.nav img {
+    width: 250px;
+}
+
+.search input {
+    border-radius: 30px;
+    border: 1px rgb(201, 201, 201) solid;
+    width: 130px;
+    height: 30px;
+    position: relative;
+}
+
+.nav,
+.search {
+    justify-content: space-between;
+}
+
+.search .btn {
+    font-size: 12px;
+}
+
+.right span {
+    font-size: 15px;
+}
+
+.nav {
+    border-bottom: 1px solid rgb(201, 201, 201);
+    width: 98%;
+    margin: auto;
+}
+
+.category p {
+    font-size: 17px;
+
+}
+
+.category {
+    justify-content: space-between;
+}
+
+.article-category .left {
+    border-right: 1px solid rgb(201, 201, 201);
+    height: 25px;
+
+}
+/* 最上面三排nav結束 */
+
+/* covid即時開始 */
+.covid {
+    background-color: white;
+    border-radius: 2px;
+}
+
+.covid-left {
+    background-color: rgb(247, 247, 247);
+}
+
+.covid a {
+    color: #153B5F;
+    font-size: 14px !important;
+
+}
+
+.covid h4 {
+    font-weight: 300 !important;
+    font-size: 26px !important;
+}
+
+.covid p {
+    font-size: 14px;
+}
+
+.fz20 {
+    font-size: 20px !important;
+}
+
+.fas {
+    color: #046EB7;
+}
+
+.fa-circle {
+    color: #B64B57;
+}
+
+.border-progress {
+    border-right: 1px dashed black;
+}
+/* covid即時結束 */
+
+/* 第一區一大兩小文章 / 第二區兩小一廣編文章開始 */
+.big {
+    width: 75%;
+    border: black 2px solid;
+    margin: -30px auto 30px;
+    text-align: center;
+    padding: 30px 60px;
+    position: relative;
+    background-color: white;
+}
+
+.news {
+    background-color: white;
+    border: rgba(224, 224, 224, 0.5) 1px solid;
+    border-radius: 5px;
+    padding: 16px;
+}
+
+.news-1 {
+    height: fit-content;
+}
+
+.news-1 p {
+    font-size: 14px;
+}
+
+.box-img {
+    width: 150px;
+}
+
+.ad {
+    width: 370px;
+    background-color: transparent;
+}
+
+.ad .title {
+    border-bottom: rgba(224, 224, 224, 0.5) 1px solid;
+    padding-bottom: 6px;
+}
+
+.box {
+    border-bottom: rgba(224, 224, 224, 0.5) 1px solid;
+}
+/* 第一區一大兩小文章 / 第二區兩小一廣編文章結束 */
+
+/* 熱門文章開始 */
+.trending {
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.trending h5 {
+    width: 13%;
+    border-bottom: 1px white solid;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+li {
+    width: 75%;
+    background-color: white;
+    list-style: none;
+    margin: 30px auto;
+}
+
+li a {
+    color: #153b5f;
+
+}
+
+li a:hover {
+    color: #009fdb;
+    text-decoration: none;
+}
+
+.trending-number {
+    font-size: 21px;
+    border-right: 2px solid #777;
+}
+
+.trending-article {
+    font-size: 21px;
+    width: 90%;
+}
+
+.trending-title-border {
+    width: 75%;
+    margin: -35px auto;
+    border-bottom: 2px solid white;
+}
+
+.second-border {
+    margin-top: -15px;
+}
+
+.last-border {
+    margin-bottom: 40px;
+}
+/* 熱門文章結束 */
+
+/* 關鍵懶人包開始 */
+.guide-pack {
+    margin: 0 100px;
+    background-color: rgb(247, 247, 247);
+}
+
+.guide-pack p {
+    color: #555555;
+}
+
+.guide-pack-card-each {
+    background-color: white;
+    border: #009fdb .5px solid;
+}
+
+.guide-pack-card-each {
+    width: 25%;
+}
+
+.guide-pack-card .m-3 img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.guide-pack-time {
+    color: #777777;
+    font-size: 14px;
+}
+
+.guide-pack-title a {
+    font-size: 17px;
+    color: #153b5f;
+}
+
+.btn {
+    font-size: 14px;
+    border: 1px #ccc solid;
+    color: #777;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #777;
+    border: 1px #777 solid;
+}
+/* 關鍵懶人包結束 */
+
+/* 關鍵影音開始 */
+.video-title {
+    margin: auto;
+    width: 140px;
+    border-bottom: 1px solid #ccc;
+    color: #555555;
+}
+
+.video-main {
+    width: 62%;
+    background-color: white;
+    border: 2px #333 solid;
+    padding: 15px;
+}
+
+.video-main p {
+    font-size: 14px;
+    color: #85BBCE;
+}
+
+.video-main h5 {
+    color: #153B5F;
+}
+
+.video-right {
+    width: 35%;
+}
+
+.video-selected,
+.video-new {
+    background-color: white;
+}
+
+.video-selected-title {
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.title-category a {
+    font-size: 14px;
+    color: #153b5f;
+}
+
+.title-category p {
+    margin-top: 15px;
+    padding: 2px 5px;
+    width: fit-content;
+    font-size: 11px;
+    margin-bottom: 0 !important;
+    color: #777;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.video-selected img,
+.video-new img {
+    object-fit: cover;
+    width: 130px;
+}
+/* 關鍵影音結束 */
+.special-report-main-img{
+    width: 65%;
+}
+/* 特別報導開始 */
+
+.special-report{
+    background-color: #EEEEEE;
+    border-top: solid 1px #ddd;
+}
+
+.special-report-left{
+    width: 40%;
+}
+.special-report-title a{
+font-weight: normal;
+border-bottom: 2px black solid;
+margin-bottom: 50px;
+}
+
+.special-report-title{
+    font-size: 14px;
+    padding-left: 20px;
+    border-left: 4px black solid;
+}
+
+.special-report-title .mt-2{
+    color: #777777;
+}
+
+.special-report-des{
+    margin-left: 25px;
+    font-size: 14px;
+    /* width: 50%; */
+}
+
+.special-report-author{
+    font-weight: 600;
+}
+/* 特別報導結束 */
