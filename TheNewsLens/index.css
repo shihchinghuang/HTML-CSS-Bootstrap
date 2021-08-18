@@ -246,9 +246,6 @@ li a:hover {
 .guide-pack-card-each {
     background-color: white;
     border: #009fdb .5px solid;
-}
-
-.guide-pack-card-each {
     width: 25%;
 }
 
@@ -349,7 +346,12 @@ li a:hover {
     background-color: #EEEEEE;
     border-top: solid 1px #ddd;
 }
-
+.special-report-container{
+    border-bottom: solid 1px #ccc;
+}
+.special-report-all-card{
+    border-bottom: solid 1px #ccc;
+}
 .special-report-left{
     width: 40%;
 }
@@ -372,10 +374,94 @@ margin-bottom: 50px;
 .special-report-des{
     margin-left: 25px;
     font-size: 14px;
-    /* width: 50%; */
 }
 
 .special-report-author{
     font-weight: 600;
 }
+
+.special-report-card{
+    width: 46%;
+}
+
+.special-report-card a{
+    font-size: 22px;
+    font-weight: 400;
+    text-align: right;
+    margin-right: auto;
+    line-height: 1.8em;
+    border-bottom: solid 2px #222;
+}
+
+.special-report-card-date-author{
+    border-left: solid 3px #222;
+    width: 40%;
+}
+
+.special-report-card-date-author p{
+    margin-bottom: 5px;
+}
+
+.special-report-date{
+    color: #777;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.special-report-author{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.special-report-see-all{
+    border: 3px solid #222;
+    font-size: 21px;
+}
 /* 特別報導結束 */
+
+/* 品牌聯名頻道開始 */
+.brand{
+    background-color: #222223;
+}
+
+.brand-title {
+    margin: auto;
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    color: white;
+    font-size: 24px;
+}
+
+.brand-card{
+    border-bottom: 1px solid#ccc;
+}
+
+.brand-card-each{
+    border: none;
+    height: 400px;
+}
+
+.brand-see-all{
+    border: 3px solid white;
+    font-size: 21px;
+    color: white;
+}
+
+.brand-card-title{
+    color: #555;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.brand-card-description p{
+    color: #777;
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* 品牌聯名頻道結束 */
