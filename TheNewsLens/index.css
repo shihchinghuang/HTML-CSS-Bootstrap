@@ -465,3 +465,20 @@ margin-bottom: 50px;
     text-overflow: ellipsis;
 }
 /* 品牌聯名頻道結束 */
+
+/* 其他文章開始 */
+.other-article-number{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #A4CAD9;
+    border-radius: 100%;
+    color: #A4CAD9;
+    line-height: 30px;
+    margin: 0 !important;
+}
+
+.other-article-word{
+    width:fit-content;
+    font-size: 14px;
+}
+/* 其他文章結束 */
