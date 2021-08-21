@@ -70,8 +70,15 @@ a:hover {
 
 .nav {
     border-bottom: 1px solid rgb(201, 201, 201);
-    width: 98%;
+    /* width: 98%; */
     margin: auto;
+    z-index: 100;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.scroll-show{
+    display: none;
 }
 
 .category p {
@@ -480,5 +487,15 @@ margin-bottom: 50px;
 .other-article-word{
     width:fit-content;
     font-size: 14px;
+}
+
+.other-article-more{
+    border: 1px dotted #777;
+    padding: 10px 0;
+}
+
+.other-article-more a{
+    color: #777;
+
 }
 /* 其他文章結束 */
