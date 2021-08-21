@@ -1,3 +1,5 @@
+// sticky bar 參考 https://ithelp.ithome.com.tw/articles/10196913
+
 const navbar = document.querySelector(".nav");
 const select = document.querySelector(".select");
 const header = document.querySelector(".header");

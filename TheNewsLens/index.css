@@ -499,3 +499,86 @@ margin-bottom: 50px;
 
 }
 /* 其他文章結束 */
+
+/* 關鍵評論本身 footer 開始 */
+.tnl-footer{
+    background-color: #081F35;
+}
+
+.tnl-footer span,.tnl-footer i{
+    color: #ccc;
+}
+.tnl-footer p{
+    color: white;
+}
+
+.tnl-footer i{
+    width: 40px;
+    height: 40px;
+font-size: 18px;
+border: 1px solid #ccc;
+border-radius: 50%;
+line-height: 40px;
+text-align: center;
+margin-right: 10px;
+}
+
+.tnl-footer-left{
+    padding-left: 150px;
+}
+
+.tnl-footer-right{
+    border-left: 1px solid white;
+}
+
+.tnl-footer-right p{
+    font-size: 14px;
+    color: #aaa;
+    width: fit-content;
+    padding-right: 50px;
+}
+
+.tnl-footer-right .mt-4{
+    border-bottom: 1px dotted #aaa;
+}
+/* 關鍵評論本身 footer 結束 */
+
+/* 集團 footer 開始 */
+.tnl-footer-group{
+    background-color: rgb(6,21,37);
+}
+.tnl-footer-group img{
+    width: 250px;
+}
+
+.tnl-footer-group .mt-5{
+    padding-left: 300px;
+}
+
+.tnl-footer-group .section{
+margin-right: 50px;
+}
+
+.tnl-footer-group h5{
+    width: fit-content;
+    color: white;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+.tnl-footer-group p{
+    color: #fff;
+    font-size: 14px;
+    opacity: .7;
+}
+
+/* 集團 footer 結束 */
+
+.copyright{
+    background: #000;
+}
+
+.copyright p{
+    color: white;
+    opacity: .7;
+}
